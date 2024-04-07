@@ -1,7 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import {BuildMode, BuildPaths, BuildPlatform, buildWebpack, BuildOptions} from '@packages/build-config'
-//import packageJson from './package.json'
+import packageJson from './package.json'
 
 interface EnvVariables {
     mode?: BuildMode;
@@ -40,7 +40,7 @@ export default (env: EnvVariables) => {
             admin: `admin@${ADMIN_REMOTE_URL}/remoteEntry.js`,
         },
         shared: {
-         //   ...packageJson.dependencies,
+            ...packageJson.dependencies,
             react: {
                 eager: true,
                 // requiredVersion: packageJson.dependencies['react'],

@@ -1,4 +1,4 @@
-/*import {createBrowserRouter} from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import {App} from "@/components/App/App";
 // @ts-ignore
 import shopRoutes from 'shop/Router';
@@ -14,6 +14,4 @@ export const router = createBrowserRouter([
             ...adminRoutes,
         ]
     },
-]); */
-
-
+]);
