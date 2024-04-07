@@ -20,3 +20,6 @@ export const App = () => {
         </div>
     );
 };
+
+//npm run start -w admin 
+//npm run start -workspaces
